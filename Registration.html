@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+
+    <style type="text/css">
+        .fieldset-auto-width {
+            display: inline-block;
+        }
+
+    </style>
+
+</head>
+<body>
+   
+    <center>
+        <script src="validation.js"></script>
+        <form name="myform" method="post" action="Sucessfull.html" onsubmit="return validateform()">
+
+            <table>
+
+            <fieldset class="fieldset-auto-width">
+
+                <legend>
+                    <p1>Registration</p1>
+                </legend>
+                <table cellpadding="10">
+                    <tr>
+                        <td>First Name</td>
+                        <td><input type="text" name="firstname" id="firstname" placeholder="First Name"></td>
+                        <span id="errorname1"></span>
+                    </tr>
+                    <tr>
+                        <td>Last Name</td>
+                        <td><input type="text" name="lastname" id="Lastname" placeholder="Last Name"></td>
+                    </tr>
+                    <tr>
+                        <td>User Name</td>
+                        <td><input type="text" name="Username" id="email" placeholder="Email"></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td>
+                            <input type="Password" name="password" id="password"
+                                   placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth</td>
+                        <td><input type="date" name="dob" data-date-inline-picker="true" id="dob" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit">Register</button>
+                        </td>
+                        <td>
+                            &nbsp&nbsp<a href="Registration.html"><input type="Reset" name="Reset" value="Reset"></a>
+                            &nbsp&nbsp<a href="login.html"><input type="Reset" name="Reset" value="Cancel"></a>
+                        </td>
+                    </tr>
+            </fieldset>
+            </table>
+
+
+        </form>
+    </center>
+
+
+</body>
+</html>
